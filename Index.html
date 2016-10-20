@@ -1,10 +1,28 @@
 <!DOCTYPE html>
-<html>
+<html ng-app="myApp">
   <head>
     <meta charset="utf-8">
-    <title>hello coursera</title>
+    <script src="angular.js"></script>
+    <script src="app.js"></script>
+    <style media="screen">
+      body{
+        font-size: 1.3em;
+      }
+    </style>
+    <title>Calculator App</title>
   </head>
-  <body>
-    <h1>hell</h1>
+  <body ng-controller="myController">
+    <h1>Hello Baby!!</h1>
+    <h3>Type any color name in the box to see magic!!</h3>
+    <div>
+      Color name:<input type="text" ng-model="name" style="background-color:{{name}};">
+    </div>
+    <div>You typed: {{name}}</div>
+    <p>
+      Love you..
+    </p>
+    <p>
+      from- urooj
+    </p>
   </body>
 </html>
